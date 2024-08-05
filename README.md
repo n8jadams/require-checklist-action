@@ -23,7 +23,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - uses: mheap/require-checklist-action@v2
+      - uses: n8jadams/require-checklist-action@v1.0.1
         with:
           requireChecklist: false # If this is true and there are no checklists detected, the action will fail
 ```
@@ -45,7 +45,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - uses: mheap/require-checklist-action@v2
+      - uses: n8jadams/require-checklist-action@v1.0.1
         with:
           requireChecklist: false # If this is true and there are no checklists detected, the action will fail
           issueNumber: ${{ github.event.workflow_run.pull_requests[0].number }}
@@ -64,7 +64,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - uses: mheap/require-checklist-action@v2
+      - uses: n8jadams/require-checklist-action@v1.0.1
         with:
           skipDescriptionRegex: .*\(optional\).*
           skipDescriptionRegexFlags: i
